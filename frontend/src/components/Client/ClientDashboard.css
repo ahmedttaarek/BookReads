@@ -1,0 +1,108 @@
+/* ClientDashboard.css */
+
+/* Container to fill the entire height of the viewport */
+.user-home {
+    display: flex;
+    height: 100vh;
+    position: relative;
+    background-color: #f5f5f5; /* Light background color for better contrast */
+}
+
+/* Dropdown container fixed to the left side of the page, vertically centered */
+.dropdown-container {
+    position: fixed;
+    left: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+/* Icon for the dropdown menu */
+.dropdown-icon {
+    display: block;
+    margin-bottom: 15px; /* Increased spacing for better visual separation */
+    color: #444; /* Slightly darker color for better visibility */
+    font-size: 24px; /* Larger icon size for easier interaction */
+}
+
+/* The dropdown menu, hidden by default and shown when 'show' class is added */
+.dropdown-menu-custom {
+    display: none;
+    position: absolute;
+    left: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #ffffff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Softer shadow for a modern look */
+    border-radius: 10px;
+    padding: 20px; /* More padding for a more spacious feel */
+    z-index: 1000;
+    width: 260px; /* Slightly increased width for better readability */
+}
+
+/* Show the dropdown menu when active */
+.dropdown-menu-custom.show {
+    display: block;
+}
+
+/* Individual dropdown items */
+.dropdown-item {
+    display: block;
+    padding: 14px 20px; /* Increased padding for better touch targets */
+    font-size: 18px; /* Consistent font size */
+    color: #555; /* Subtle color for a clean look */
+    text-decoration: none;
+    border-radius: 6px; /* Slightly larger border radius for smoother edges */
+    transition: background-color 0.2s ease-in-out; /* Smooth hover effect */
+}
+
+/* Hover effect for dropdown items */
+.dropdown-item:hover {
+    background-color: #e9ecef;
+    color: #222; /* Darker text color on hover for better contrast */
+}
+
+/* Content area for the table, taking up the remaining space and centered */
+.content {
+    margin-left: 300px; /* Adjusted based on the width of the dropdown menu */
+    padding: 20px; /* Added padding for better content spacing */
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Aligned to the top for better content flow */
+}
+
+/* Table styles */
+table.table {
+    width: 90%; /* Adjusted width for more content space */
+    margin-top: 40px; /* Increased margin for better spacing */
+    border-collapse: collapse;
+    background-color: #ffffff; /* White background for better contrast */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05); /* Soft shadow for depth */
+    border-radius: 10px; /* Rounded corners for a modern look */
+}
+
+/* Table headers */
+table.table th {
+    padding: 16px;
+    font-size: 18px; /* Consistent font size */
+    text-align: left;
+    background-color: #f2f2f2;
+    border-bottom: 2px solid #ddd; /* Thicker border for header differentiation */
+}
+
+/* Table cells */
+table.table td {
+    padding: 16px;
+    font-size: 16px; /* Slightly smaller font for table content */
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Images inside table cells */
+table.table img {
+    max-width: 80px; /* Increased size for better visibility */
+    height: auto;
+    border-radius: 5px; /* Rounded corners for a polished look */
+}

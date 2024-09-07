@@ -1,0 +1,47 @@
+/* AuthorDetails.css */
+
+.container {
+    margin-top: 20px;
+}
+
+.img-fluid {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+h3 {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.list-group-item {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.list-group-item:hover {
+    background-color: #f1f1f1;
+}
+
+.list-group-item a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.list-group-item a:hover {
+    text-decoration: underline;
+}
+
+.no-books {
+    font-style: italic;
+    color: #888;
+    margin-top: 10px;
+}

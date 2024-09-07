@@ -1,0 +1,49 @@
+.book_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Center the cards and add space between them */
+    gap: 20px; /* Add space between cards */
+    margin-top: 20px; /* Add some top margin to separate it from the header */
+    padding: 0 20px; /* Add padding to the sides */
+    height: 00vh;
+    
+    
+}
+
+.book_card {
+    background-color: #f8f9fa; /* Add a background color */
+    border: 1px solid #ddd; /* Add a border */
+    border-radius: 8px; /* Slight rounding of corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    width: 400px; /* Set a fixed width for each card */
+    text-align: center; /* Center the text inside the card */
+    overflow: hidden; /* Ensure content doesn't overflow */
+    transition: transform 0.2s; /* Smooth transition for scaling effect */
+   
+}
+
+.book_card:hover {
+    transform: scale(1.05); /* Slightly enlarge the card on hover */
+}
+
+.card-img-top {
+    border-bottom: 1px solid #ddd; /* Add a border below the image */
+}
+
+.card-title {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #333;
+}
+
+.card-text {
+    font-size: 14px;
+    color: #666;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    margin: 10px 0;
+    border-radius: 5px;
+}
